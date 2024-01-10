@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { PrimeNGConfig } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
+
+import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ButtonModule],
+  imports: [CommonModule, RouterOutlet, InicioSesionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

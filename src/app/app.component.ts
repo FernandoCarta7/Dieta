@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { PrimeNGConfig } from 'primeng/api';
 
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
+import { ListarNutricionistaComponent } from './listar-nutricionista/listar-nutricionista.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, InicioSesionComponent],
+  imports: [CommonModule, RouterOutlet, InicioSesionComponent, ListarNutricionistaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

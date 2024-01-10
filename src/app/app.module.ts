@@ -5,6 +5,7 @@ import { AppComponent } from "./app.component";
 import { InicioSesionComponent } from "./inicio-sesion/inicio-sesion.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { HttpClientModule } from "@angular/common/http";
+import { ListarNutricionistaComponent } from "./listar-nutricionista/listar-nutricionista.component";
 
 
 
@@ -16,7 +17,8 @@ import { HttpClientModule } from "@angular/common/http";
         BrowserModule,
         HttpClientModule,
         AppRoutingModule,
-        InicioSesionComponent
+        InicioSesionComponent,
+        ListarNutricionistaComponent
         
     ],
     providers: [],

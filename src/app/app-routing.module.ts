@@ -7,7 +7,7 @@ const routes: Routes = [
 
   { path: 'inicio-sesion', component : InicioSesionComponent },
   { path: '', redirectTo: 'inicio-sesion', pathMatch: 'full' },
-  
+  { path: 'nutricionistas',component : ListarNutricionistaComponent }
   
 ];
 

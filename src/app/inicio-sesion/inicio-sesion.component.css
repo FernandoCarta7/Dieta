@@ -1,0 +1,14 @@
+.centrado {
+    width: 50%;
+    /* Puedes ajustar el ancho según tus necesidades */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor-padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Para centrar verticalmente en toda la pantalla */
+}

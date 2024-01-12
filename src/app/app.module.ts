@@ -3,10 +3,10 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { AppComponent } from "./app.component";
 import { HttpClient } from "@angular/common/http";
-import { NutricionistaService } from "./listar-nutricionista/nutricionista.service";
+import { NutricionistaService } from "./nutricionista.service";
 import { ListarNutricionistaComponent } from "./listar-nutricionista/listar-nutricionista.component";
 import { InicioSesionComponent } from "./inicio-sesion/inicio-sesion.component";
-
+import { provideHttpClient } from '@angular/common/http';
 
 
 
@@ -19,7 +19,7 @@ import { InicioSesionComponent } from "./inicio-sesion/inicio-sesion.component";
         InicioSesionComponent,
         ListarNutricionistaComponent, 
     ],
-    providers: [AppComponent, NutricionistaService, HttpClient],
+    providers: [AppComponent, NutricionistaService, provideHttpClient()],
     bootstrap: []
 })
 

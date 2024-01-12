@@ -12,13 +12,13 @@ import java.util.List;
 import java.util.Map;
 @RestController
 @RequestMapping("/")
-@CrossOrigin(value = "http://localhost:4200/inicio-sesion") //esta dirección corresponde a angular
+@CrossOrigin(value = "http://localhost:4200") //esta dirección corresponde a angular
 public class ControladorNutricionista {
   private static final Logger logger = LoggerFactory.getLogger(ControladorNutricionista.class);
 
   @Autowired
   private NutricionistaServicio nutricionistaServicio;
-  @GetMapping("/listar-nutricionista")
+  @GetMapping("/listarnutricionista")
   public List<Nutricionista> obtenerNutricionistas(){
     List<Nutricionista> nutricionistas = this.nutricionistaServicio.listar();
     logger.info("Listando a nutricionistas desde controlador");

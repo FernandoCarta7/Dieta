@@ -1,16 +1,20 @@
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
-import { Nutricionista } from "../clases/nutricionista";
+import { Nutricionista } from "./clases/nutricionista";
 import { Injectable } from "@angular/core";
 
 @Injectable({ providedIn: 'root' })
 export class NutricionistaService {
 
-  private readonly urlBase = "http://localhost:8080/listar-nutricionista";
+  private readonly urlBase = 'http://localhost:8080/listarnutricionista';
 
 
-  constructor(private http: HttpClient) { }
-/*  obtenerNutricionistasLista(): Observable<Nutricionista[]> {
+  constructor(private http: HttpClient) {
+
+
+  }
+
+  obtenerNutricionistasLista(): Observable<Nutricionista[]> {
     return this.http.get<Nutricionista[]>(this.urlBase);
   }
 
@@ -29,5 +33,5 @@ export class NutricionistaService {
 
   eliminarNutricionista(id: number): Observable<Object> {
     return this.http.delete(`${this.urlBase}/${id}`);
-  }*/
+  }
 }

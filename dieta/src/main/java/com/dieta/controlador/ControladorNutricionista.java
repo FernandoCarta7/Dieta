@@ -18,7 +18,7 @@ public class ControladorNutricionista {
 
   @Autowired
   private NutricionistaServicio nutricionistaServicio;
-  @GetMapping("/nutricionistas")
+  @GetMapping("/listar-nutricionista")
   public List<Nutricionista> obtenerNutricionistas(){
     List<Nutricionista> nutricionistas = this.nutricionistaServicio.listar();
     logger.info("Listando a nutricionistas desde controlador");

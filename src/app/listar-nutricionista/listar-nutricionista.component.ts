@@ -1,7 +1,7 @@
 import { Component, Injectable, NgModule } from '@angular/core';
 import { Nutricionista } from '../clases/nutricionista';
 import { Router } from '@angular/router';
-import { NutricionistaService } from '../nutricionista.service'; 
+import { NutricionistaService } from './nutricionista.service'; 
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientJsonpModule } from '@angular/common/http';
 @Component({

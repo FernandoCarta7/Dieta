@@ -1,5 +1,5 @@
 <div class="card flex justify-content-center contenedor-padre">
-    <p-card header="Inicio de sesión - Nutrición" subheader="Ingrese su usuario y clave" [style]="{ width: '25rem' }">
+    <p-card header="Inicio de sesión - Nutrición" subheader="Ingrese su usuario y clave" [style]="{ width: '26rem' }">
         <ng-template pTemplate="header">
             <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
         </ng-template>
@@ -18,18 +18,16 @@
                 <p-password></p-password>
                 <label for="password">Password</label>
             </span>
-            
+
         </div>
         <ng-template pTemplate="footer">
-            <p-button 
-                label="Iniciar sesión" 
-                icon="pi pi-arrow-right"
-                href="../listar-nutricionista/listar-nutricionista.component.html"
-                [style]="{ 'margin-left': '1em'}">
-            </p-button>
-            <p-button label="Registrarse" icon="pi pi-user-plus" styleClass="p-button-secondary"
-            [style]="{ 'margin-left': '1em' }"></p-button>
+            
+            <a href="../inicio-sesion" rel="noopener noreferrer" class="p-button font-bold" [style]="{ 'margin-left': '1.5em'}">
+                Iniciar sesión
+            </a>
+            <a href="../registrar-usuario" rel="noopener noreferrer" class="p-button font-bold" [style]="{ 'margin-left': '1em'}">Registrar usuario</a>
         </ng-template>
     </p-card>
-</div>-
+</div>
+
 <!--<p-password [(ngModel)]="value" [feedback]="false"></p-password>-->

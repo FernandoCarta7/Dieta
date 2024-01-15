@@ -20,7 +20,7 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
 public class SecurityConfig {
-  @Bean
+  /*@Bean
   public DataSource dataSource(){
     return new EmbeddedDatabaseBuilder()
       .setType(EmbeddedDatabaseType.H2)
@@ -39,5 +39,5 @@ public class SecurityConfig {
     JdbcUserDetailsManager users = new JdbcUserDetailsManager(dataSource);
     users.createUser(user);
     return  users;
-  }
+  }*/
 }
